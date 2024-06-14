@@ -44,7 +44,7 @@ def generate_token():
     if email != "test" or password != "test":
         return jsonify (
             {
-                "msg": "Bad eamil or password"
+                "msg": "Bad email or password"
             }
         ), 401
     access_token = create_access_token(identity=email)
